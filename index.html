@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Priyansh Prajapati | Exam Demo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+    body{
+      min-height:100vh;
+      background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#fff;
+    }
+    .card{
+      width:380px;
+      padding:30px;
+      border-radius:20px;
+      background:rgba(255,255,255,0.1);
+      backdrop-filter:blur(12px);
+      box-shadow:0 20px 40px rgba(0,0,0,0.4);
+      text-align:center;
+      animation:float 4s ease-in-out infinite;
+    }
+    @keyframes float{
+      0%,100%{transform:translateY(0)}
+      50%{transform:translateY(-15px)}
+    }
+    h1{
+      font-size:28px;
+      font-weight:700;
+      background:linear-gradient(90deg,#00f2fe,#4facfe);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+      animation:glow 3s infinite alternate;
+    }
+    @keyframes glow{
+      from{text-shadow:0 0 10px #00f2fe}
+      to{text-shadow:0 0 25px #4facfe}
+    }
+    p{margin:15px 0;font-size:14px;opacity:0.9}
+    .btn{
+      display:inline-block;
+      margin-top:20px;
+      padding:12px 30px;
+      border-radius:30px;
+      background:linear-gradient(90deg,#ff512f,#dd2476);
+      color:#fff;
+      text-decoration:none;
+      font-weight:600;
+      transition:0.3s;
+    }
+    .btn:hover{transform:scale(1.1)}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Priyansh Prajapati</h1>
+    <p>Exam Demo Website
+    <br>Modern CSS Animation Design</p>
+    <a href="#" class="btn">Explore</a>
+  </div>
+</body>
+</html>
